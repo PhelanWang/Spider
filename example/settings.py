@@ -20,7 +20,7 @@ USER_AGENT = 'scrapy-redis (+https://github.com/rolando/scrapy-redis)'
 
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
-SCHEDULER_PERSIST = False
+SCHEDULER_PERSIST = True
 
 ITEM_PIPELINES = {
     'example.pipelines.ExamplePipeline': 300,

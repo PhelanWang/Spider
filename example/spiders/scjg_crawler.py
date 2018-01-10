@@ -4,6 +4,9 @@ import scrapy
 from example.items import ExampleItem
 from scrapy_redis.spiders import RedisSpider
 
+"""
+scjg_crawler,爬取由master_crawler添加到scjg_crawler:start_urls队列中的页面的内容
+"""
 
 class ScjgSpider(RedisSpider):
     name = "scjg_crawler"

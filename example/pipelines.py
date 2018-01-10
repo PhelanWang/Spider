@@ -9,6 +9,7 @@ from scrapy.conf import settings
 from pymongo import MongoClient
 
 
+# 保存到文件data.txt
 class ExamplePipeline(object):
 
     def __init__(self):
@@ -23,7 +24,7 @@ class ExamplePipeline(object):
     def close_spider(self, spider):
         self.file.close()
 
-
+# 保存到MongoDB中
 class MongoDBPipeline(object):
 
     def __init__(self):

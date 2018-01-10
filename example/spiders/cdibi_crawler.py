@@ -4,6 +4,9 @@ import scrapy
 from example.items import ExampleItem
 from scrapy_redis.spiders import RedisSpider
 
+"""
+cdibi_crawler,爬取由master_crawler添加到cdibi_crawler:start_urls队列中的页面的内容
+"""
 
 class CdibiSpider(RedisSpider):
     name = "cdibi_crawler"

@@ -6,6 +6,7 @@
 
 from scrapy.item import Item, Field
 
+# 保存新闻标题，链接和时间
 class ExampleItem(Item):
     # define the fields for your item here like:
     # name = Field()
